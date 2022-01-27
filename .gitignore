@@ -1,0 +1,18 @@
+# IntelliJ IDEA
+.idea/
+classes/
+out/
+*.iml
+*.ipr
+*.iws
+
+# Gradle
+.gradle/
+build/
+captures/
+local.properties
+
+# Other
+.DS_Store
+tmp/
+*.log
