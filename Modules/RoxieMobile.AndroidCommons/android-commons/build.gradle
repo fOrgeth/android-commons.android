@@ -48,5 +48,5 @@ dependencies {
     testImplementation "junit:junit:$JUNIT_VERSION"
 }
 
-// Deploy to jitpack.io
-apply from: 'tools/install.gradle'
+// Deploy to JitPack.io
+apply from: 'tools/publishing.gradle'

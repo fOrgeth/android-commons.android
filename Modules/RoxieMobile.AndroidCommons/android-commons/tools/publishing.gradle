@@ -1,0 +1,25 @@
+ext {
+    mPackageName = 'Android Commons Library'
+    mPackageDesc = 'A collection of useful utility classes common to different Android projects.'
+
+    mGroupId     = 'com.roxiemobile.android'
+    mArtifactId  = 'android-commons'
+    mVersionName = android.defaultConfig.versionName
+    mPackageType = 'aar'
+
+    mCompanyUrl  = 'https://www.roxiemobile.com'
+    mWebsiteUrl  = 'https://github.com/roxiemobile/android-commons.android'
+    mIssuesUrl   = 'https://github.com/roxiemobile/android-commons.android/issues'
+    mGitRepoUrl  = 'scm:git:https://github.com/roxiemobile/android-commons.android.git'
+
+    mAuthorId    = 'roxiemobile'
+    mAuthorName  = 'Aleksandr Bragin'
+    mAuthorEmail = 'bragin-av@roxiemobile.com'
+
+    mLicenseName = 'The Apache Software License, Version 2.0'
+    mLicenseUrl  = 'https://www.apache.org/licenses/LICENSE-2.0.txt'
+    mAllLicenses = ['Apache-2.0']
+}
+
+// Deploy to JitPack.io
+apply from: 'tools/jitpack.gradle'

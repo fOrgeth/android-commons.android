@@ -1,0 +1,47 @@
+apply plugin: 'maven-publish'
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+
+                groupId = mGroupId
+                artifactId = mArtifactId
+                version = mVersionName
+
+                // This generates POM.xml with proper parameters
+                pom {
+
+                    packaging = mPackageType
+                    groupId = mGroupId
+                    artifactId = mArtifactId
+
+                    name = mPackageName
+                    description = mPackageDesc
+                    url = mWebsiteUrl
+
+                    licenses {
+                        license {
+                            name = mLicenseName
+                            url = mLicenseUrl
+                        }
+                    }
+
+                    developers {
+                        developer {
+                            id = mAuthorId
+                            name = mAuthorName
+                            email = mAuthorEmail
+                        }
+                    }
+
+                    scm {
+                        connection = mGitRepoUrl
+                        developerConnection = mGitRepoUrl
+                        url = mWebsiteUrl
+                    }
+                }
+            }
+        }
+    }
+}

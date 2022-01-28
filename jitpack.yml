@@ -1,2 +1,5 @@
-jdk: openjdk8
-install: cd Modules/RoxieMobile.AndroidCommons && ./gradlew publishToMavenLocal
+# Configuration file for building snapshots and releases with JitPack.io
+jdk:
+  - openjdk8
+before_install:
+  - cd ./Modules/RoxieMobile.AndroidCommons
