@@ -44,15 +44,15 @@ android {
 dependencies {
 
     // Kotlin
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$KOTLIN_VERSION"
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$KOTLIN_VERSION"
 
     // Gson
     final GSON_VERSION = rootProject.ext.GSON_VERSION
-    implementation "com.google.code.gson:gson:$GSON_VERSION"
+    api "com.google.code.gson:gson:$GSON_VERSION"
 
     // Stream
     final STREAM_VERSION = rootProject.ext.STREAM_VERSION
-    implementation "com.annimon:stream:$STREAM_VERSION"
+    api "com.annimon:stream:$STREAM_VERSION"
 
     // JUnit
     final JUNIT_VERSION = rootProject.ext.JUNIT_VERSION
